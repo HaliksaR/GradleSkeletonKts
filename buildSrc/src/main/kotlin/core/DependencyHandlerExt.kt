@@ -9,25 +9,25 @@ fun DependencyHandler.impl(dependencyNotation: ProjectDependency): Dependency? =
     add("implementation", dependencyNotation)
 
 fun DependencyHandler.api(dependencyNotation: Any): Dependency? =
-    add("core.api", dependencyNotation.toString())
+    add("api", dependencyNotation.toString())
 
 fun DependencyHandler.kapt(dependencyNotation: Any): Dependency? =
-    add("core.kapt", dependencyNotation.toString())
+    add("kapt", dependencyNotation.toString())
 
 fun DependencyHandler.testImpl(dependencyNotation: Any): Dependency? =
     add("testImplementation", dependencyNotation.toString())
 
 fun DependencyHandler.testApi(dependencyNotation: Any): Dependency? =
-    add("core.testApi", dependencyNotation.toString())
+    add("testApi", dependencyNotation.toString())
 
 fun DependencyHandler.androidTestImpl(dependencyNotation: Any): Dependency? =
     add("androidTestImplementation", dependencyNotation.toString())
 
 fun DependencyHandler.androidTestApi(dependencyNotation: Any): Dependency? =
-    add("core.androidTestApi", dependencyNotation.toString())
+    add("androidTestApi", dependencyNotation.toString())
 
 fun DependencyHandler.kaptTest(dependencyNotation: Any): Dependency? =
-    add("core.kaptTest", dependencyNotation.toString())
+    add("kaptTest", dependencyNotation.toString())
 
 fun DependencyHandler.debugImpl(dependencyNotation: Any): Dependency? =
     add("debugImplementation", dependencyNotation.toString())
